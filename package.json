@@ -1,48 +1,57 @@
 {
-  "name": "lit-render-issue",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "es-dev-server --node-resolve  -w",
-    "clean": "rm -rf node_modules dist package-lock.json",
-    "lint": "eslint 'src/**/*.ts' --fix; prettier 'src/**/*.ts' --write",
-    "build": "tsc -p src",
-    "watch": "tsc -p src -w"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/drochgenius/lit-render-issue.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/drochgenius/lit-render-issue/issues"
-  },
-  "homepage": "https://github.com/drochgenius/lit-render-issue#readme",
-  "eslintConfig": {
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "extends": [
-      "plugin:@typescript-eslint/recommended"
-    ],
-    "rules": {
-      "@typescript-eslint/no-explicit-any": "warn"
+    "name": "lit-render-issue",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "es-dev-server --node-resolve  -w",
+        "clean": "rm -rf node_modules dist package-lock.json",
+        "lint": "eslint 'src/**/*.ts' --fix; prettier 'src/**/*.ts' --write",
+        "build": "tsc -p src",
+        "watch": "tsc -p src -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/drochgenius/lit-render-issue.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/drochgenius/lit-render-issue/issues"
+    },
+    "homepage": "https://github.com/drochgenius/lit-render-issue#readme",
+    "eslintConfig": {
+        "parser": "@typescript-eslint/parser",
+        "plugins": [
+            "@typescript-eslint"
+        ],
+        "extends": [
+            "plugin:@typescript-eslint/recommended"
+        ],
+        "rules": {
+            "@typescript-eslint/no-explicit-any": "warn"
+        }
+    },
+    "prettier": {
+        "endOfLine": "lf",
+        "printWidth": 160,
+        "singleQuote": true,
+        "semi": true,
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "useTabs": false
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.29.0",
+        "@typescript-eslint/parser": "^4.29.0",
+        "es-dev-server": "^2.1.0",
+        "eslint": "^7.32.0",
+        "prettier": "^2.3.2",
+        "typescript": "^4.3.5"
+    },
+    "dependencies": {
+        "lit": "^2.0.0-rc.2"
     }
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.29.0",
-    "@typescript-eslint/parser": "^4.29.0",
-    "es-dev-server": "^2.1.0",
-    "eslint": "^7.32.0",
-    "prettier": "^2.3.2",
-    "typescript": "^4.3.5"
-  },
-  "dependencies": {
-    "lit": "^2.0.0-rc.2"
-  }
 }
